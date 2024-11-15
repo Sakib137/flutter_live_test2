@@ -34,6 +34,31 @@ class MyWidget extends StatelessWidget {
         backgroundColor: Colors.red,
         toolbarHeight: 70,
       ),
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 100, // Adjust the size of the circle
+              backgroundColor: Colors.grey,
+              child: Icon(
+                Icons.bloodtype, // Blood donation icon
+                color: Colors.red,
+                size: 90,
+              ),
+            ),
+            SizedBox(height: 10), // Spacing between the icon and text
+            Text(
+              'Donate Blood',
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
